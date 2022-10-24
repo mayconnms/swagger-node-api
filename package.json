@@ -1,0 +1,30 @@
+{
+  "name": "swagger-node-api",
+  "version": "1.0.0",
+  "description": "NodeJs api usando Swagger Auto Gen",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "swagger-autogen": "node swagger.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayconnms/swagger-node-api.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Swagger"
+  ],
+  "author": "Maycon Moraes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayconnms/swagger-node-api/issues"
+  },
+  "homepage": "https://github.com/mayconnms/swagger-node-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-autogen": "^2.22.0",
+    "swagger-ui-express": "^4.5.0"
+  }
+}
