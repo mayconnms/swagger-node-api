@@ -3,8 +3,10 @@ const http = require('http')
 const swaggerUi = require('swagger-ui-express')
 const swaggerFile = require('./swagger_output.json')
 
-http.createServer(app).listen(3000, () => {
-    console.log('Server running on port 3000')
+let port = process.env.PORT || 3000;
+
+http.createServer(app).listen(port, () => {
+    console.log('Server is running on port ' + port)
 })
 
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
