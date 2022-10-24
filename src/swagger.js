@@ -1,6 +1,6 @@
 const swaggerAutogem = require('swagger-autogen')()
 
-const outputFile = './swagger_output.json'
+const outputFile = '../swagger_output.json'
 const endpointsFiles = ['./endpoints.js']
 
 const doc = {
